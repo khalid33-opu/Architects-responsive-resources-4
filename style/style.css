@@ -1,6 +1,12 @@
 /* font family add  */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
 .work-sans {
     font-family: "Work Sans", sans-serif;
 }
@@ -23,8 +29,11 @@
 main>section {
     margin-top: 130px;
 }
-
-
+/* main title */
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
 
 
 /* dark-2 */
@@ -66,10 +75,6 @@ main>section {
     margin: 0 auto;
 }
 
-.brand {
-    font-size: 3rem;
-    font-weight: bold;
-}
 
 /* banner section start here */
 .banner-content {
@@ -137,11 +142,42 @@ main {
     margin: 24px 0 32px 0;
 }
 
+/* fact section start here */
+.fact{
+    
+}
+
 /* responsive media query */
 @media screen and (max-width:576px) {
 
     .navbar,
-    .nav-links {
+    .nav-links,
+    .teams {
         flex-direction: column;
+    }
+
+    .our-features-container {
+        margin-left: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        padding: 10px;
+        display: block;
+
+    }
+}
+
+/* medium responsive media query */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .teams {
+        flex-direction: column;
+    }
+
+    .our-features-container{
+        margin: 50px auto;
     }
 }
